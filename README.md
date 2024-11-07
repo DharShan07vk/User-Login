@@ -20,7 +20,7 @@ This project implements a secure user authentication system using Node.js, Expre
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/DharShan07vk/PRODIGY_FS_01.git
+    git clone https://github.com/DharShan07vk/User-Login.git
     ```
 2. Navigate to the project directory:
     ```bash
