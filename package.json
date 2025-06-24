@@ -11,7 +11,7 @@
   "name": "user-login",
   "version": "1.0.0",
   "description": "This project implements a secure user authentication system using Node.js, Express, MongoDB, and EJS. Users can sign up, log in, and access protected routes.",
-  "main": "app.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "start"
