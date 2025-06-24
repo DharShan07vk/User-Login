@@ -1,9 +1,21 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "crc": "^4.3.2",
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "express.js": "^1.0.0",
-    "mongoose": "^7.6.13"
-  }
+    "mongoose": "^7.8.7",
+    "nodemon": "^3.1.10"
+  },
+  "name": "user-login",
+  "version": "1.0.0",
+  "description": "This project implements a secure user authentication system using Node.js, Express, MongoDB, and EJS. Users can sign up, log in, and access protected routes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "start"
+  },
+  "author": "dharshan",
+  "license": "ISC"
 }

@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: false }));
+app.set('views', path.join(__dirname, '..', 'views'));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
@@ -45,10 +46,11 @@ app.post("/signup", async (req, res) => {
 app.post("/login", async (req, res) => {
     try {
         const check = await collection.findOne({ name: req.body.username });
-        if (!check) {
-            res.send("User name cannot found")
-        }
         const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
+        if (!check) {
+           return res.send("User name cannot found")
+        }
+    
         if (!isPasswordMatch) {
             res.render("wrong");
         }
