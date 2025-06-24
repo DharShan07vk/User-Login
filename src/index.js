@@ -47,12 +47,14 @@ app.post("/login", async (req, res) => {
     try {
         const check = await collection.findOne({ name: req.body.username });
         const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
-        if (!check) {
-           return res.send("User name cannot found")
+        const passwordlen = req.body.password.length;
+        if(passwordlen < 8){
+            const msg = "Password Should Not less than 8 Characters...";
+            res.render("login",{iserror : msg});
         }
-    
-        if (!isPasswordMatch) {
-            res.render("wrong");
+        else if (!isPasswordMatch || !check) {
+            const msg = "Check UserName or Password";
+            res.render("login", {iserror : msg});
         }
         else {
             res.render("home");

@@ -10,6 +10,13 @@
 
     <div class="form-container">
         <h2>Login</h2>
+        <% if(locals.iserror){ %>
+            <div>
+                <p class="warn" style="margin-bottom: 20px;"> <%= iserror %></p>
+            </div>
+        <% } else { %>
+            <p></p>
+            <% } %>
         <form action="/login" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>

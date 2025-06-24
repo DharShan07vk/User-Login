@@ -79,6 +79,13 @@ h2 {
   transform: translateY(-5px);
 }
 
+.warn{
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
 p {
   margin-top: 20px;
   text-align: center;
