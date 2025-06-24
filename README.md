@@ -22,22 +22,18 @@ This project implements a secure user authentication system using Node.js, Expre
     ```bash
     git clone https://github.com/DharShan07vk/User-Login.git
     ```
-2. Navigate to the project directory:
-    ```bash
-    cd src
+2. Install the dependencies:
     ```
-3. Install the dependencies:
+    npm install moogose crc express
     ```
-    npm install moogose crcs express
-    ```
-4. Create a `config.js` file with your MongoDB connection details:
+3. Create a `config.js` file with your MongoDB connection details:
     
 
 ### Running the Application
 
 1. Start the server:
     
-    npm start index.js
+    npm start
     
 2. Open your browser and navigate to `http://localhost:3000`.
 
