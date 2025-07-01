@@ -13,7 +13,7 @@
   "description": "This project implements a secure user authentication system using Node.js, Express, MongoDB, and EJS. Users can sign up, log in, and access protected routes.",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodem src/index.js",
+    "start": "node src/index.js",
     "test": "start"
   },
   "author": "dharshan",
